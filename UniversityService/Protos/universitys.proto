@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+option csharp_namespace = "UniversityService";
+
+service GrpcUniversity {
+    rpc GetAllUniversitys (GetAllRequest) returns (UniversityResponse);
+}
+
+message GetAllRequest {}
+
+message GrpcUniversityModel{
+    int32 universityId = 1;
+    string name = 2;
+    string publisher = 3;
+}
+
+message UniversityResponse {
+    repeated GrpcUniversityModel university = 1;
+}
+

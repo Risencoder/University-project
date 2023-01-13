@@ -1,0 +1,2 @@
+obj\Debug\net7.0\Protos/Universitys.cs \
+obj\Debug\net7.0\Protos/UniversitysGrpc.cs: Protos/universitys.proto
